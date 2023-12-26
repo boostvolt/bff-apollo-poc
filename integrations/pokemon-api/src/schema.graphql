@@ -1,0 +1,26 @@
+extend schema @link(url: "https://specs.apollo.dev/federation/v2.0", import: ["@key", "@shareable"])
+
+type Pokemon {
+    order: Int!
+    id: Int!
+    height: Int
+    name: String!
+    base_experience: Int
+}
+
+type PokemonName {
+    name: String!
+    language: [PokemonNameLocalizationInfo]!
+}
+
+type PokemonNameLocalizationInfo {
+    name: String!
+    url: String!
+}
+
+# --------------------
+
+type Query {
+    pokemons: [Pokemon]!
+    pokemon(name: String!): Pokemon!
+}
