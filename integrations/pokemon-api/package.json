@@ -16,7 +16,7 @@
     "@apollo/subgraph": "^2.4.8",
     "@apollo/datasource-rest": "^6.0.1",
     "graphql": "^16.7.1",
-    "undici": "^5.22.1",
+    "undici": "^5.26.2",
     "whatwg-fetch": "^3.6.2"
   },
   "devDependencies": {
